@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Zee's Delivery Services</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+    body {
+      background: linear-gradient(to bottom right, #fff8e1, #fff3e0);
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    header {
+      position: relative;
+      background: linear-gradient(to bottom right, #ffe0b2, #fff3e0);
+      text-align: center;
+      padding: 100px 20px 60px;
+      overflow: hidden;
+    }
+    header::before {
+      content: '';
+      background: none;
+      opacity: 0.08;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+    header h1 {
+      font-size: 3em;
+      color: #ff6f00;
+      margin-bottom: 10px;
+      position: relative;
+      z-index: 1;
+    }
+    header p {
+      font-size: 1.2em;
+      color: #555;
+      position: relative;
+      z-index: 1;
+    }
+    .button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 30px;
+      background: #ff6f00;
+      color: white;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      position: relative;
+      z-index: 1;
+    }
+    .button:hover {
+      background: #e65100;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      padding: 30px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      margin-bottom: 40px;
+    }
+    h2 {
+      color: #ff6f00;
+      margin-bottom: 20px;
+    }
+    ul {
+      list-style: disc;
+      margin-left: 20px;
+    }
+    .whatsapp-button {
+      display: inline-block;
+      background-color: #25D366;
+      color: white;
+      padding: 12px 25px;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      margin-top: 15px;
+      transition: background 0.3s ease;
+    }
+    .whatsapp-button:hover {
+      background-color: #1da851;
+    }
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1em;
+    }
+    form button {
+      background: #ff6f00;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    form button:hover {
+      background: #e65100;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #ffe0b2;
+      color: #555;
+    }
+  
+    .click-animate {
+      transition: transform 0.2s ease;
+    }
+    .click-animate.clicked {
+      transform: scale(0.96);
+    }
+</style>
+
+
+  <style>
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 5s ease forwards;
+    }
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    .delay-1 { animation-delay: 0.3s; }
+    .delay-2 { animation-delay: 0.6s; }
+    .delay-3 { animation-delay: 0.9s; }
+    .delay-4 { animation-delay: 1.2s; }
+  
+    .click-animate {
+      transition: transform 0.2s ease;
+    }
+    .click-animate.clicked {
+      transform: scale(0.96);
+    }
+</style>
+
+</head>
+
+<body>
+
+  <header>
+    <h1 class="fade-in delay-1">Welcome to Zee's Delivery Services</h1>
+    <p class="fade-in delay-2">Fast. Reliable. From Quetta to Nearby Cities</p>
+    <a href="#services" class="button fade-in delay-3 click-animate" onclick="animateClick(this)">Explore Our Services</a>
+  </header>
+
+  <section id="services" class="card fade-in delay-1">
+    <h2>Our Services</h2>
+    <ul>
+      <li>Food Delivery across Quetta</li>
+      <li>Door-to-Door Pick and Drop</li>
+      <li>City-to-City Transport (within 200 km)</li>
+      <li>Serving Quetta, Pishin, and nearby areas</li>
+    </ul>
+  </section>
+
+  <section class="card fade-in delay-2">
+    <h2>About Us</h2>
+    <p>Zee's Delivery Services is your trusted partner for quick and secure deliveries. Whether it's food, packages, or transportation, we ensure it reaches on time with care.</p>
+  </section>
+
+  <section class="card fade-in delay-2">
+    <h2>Why Choose Zee’s?</h2>
+    <ul>
+      <li>Reliable and Fast Service</li>
+      <li>Friendly and Professional Staff</li>
+      <li>Affordable Pricing</li>
+      <li>Wide Area Coverage</li>
+    </ul>
+  </section>
+
+  
+<section class="card fade-in delay-2" style="background: linear-gradient(to right, #fff3e0, #ffe0b2); display: flex; align-items: center; gap: 30px; flex-wrap: wrap;">
+  <div style="flex: 1; min-width: 250px;">
+    <h2 style="color: #d84315; font-size: 2em; margin-bottom: 10px;">LIMITED TIME OFFER!</h2>
+    <p style="font-size: 1.3em; font-weight: bold; color: #e65100;">Get 30% OFF on your FIRST ORDER!</p>
+    <p style="font-size: 1.1em;">Place 5 orders in one day and enjoy <strong>FREE DELIVERY for 24 hours!</strong></p>
+    <p style="margin-top: 12px;">Don’t miss out — <strong>Order Now</strong> and grab this exclusive deal!</p>
+    <a href="#order" class="button click-animate" onclick="animateClick(this)" style="margin-top: 15px;">Order Now</a>
+  </div>
+  
+</section>
+
+<section class="card fade-in delay-2">
+    <h2>Testimonials</h2>
+    <p>"Best delivery service in Quetta! Highly recommended."</p>
+    <p>"Fast and secure. Excellent support!"</p>
+  </section>
+
+  <section id="order" class="card">
+    <h2>Place Your Order</h2>
+    <form onsubmit="sendToWhatsApp(); return false;">
+      <input type="text" id="name" placeholder="Your Name" required>
+      <input type="text" id="address" placeholder="Pickup/Delivery Address" required>
+      <input type="text" id="phone" placeholder="Your Phone Number" required>
+      <input type="text" id="service" placeholder="Service Needed (e.g. food delivery)" required>
+      
+<label for="payment">Select Payment Method:</label>
+<select id="payment" name="payment" required style="width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ccc; border-radius: 8px; font-size: 1em;">
+  <option value="" disabled selected>Select your payment method</option>
+  <option value="Cash on Delivery">Cash on Delivery</option>
+  <option value="JazzCash">JazzCash</option>
+  <option value="Easypaisa">Easypaisa</option>
+  <option value="Bank Transfer">Bank Transfer</option>
+</select>
+
+      <textarea id="details" placeholder="More Details (optional)"></textarea>
+      <button type="submit" class="click-animate" onclick="animateClick(this)">Send via WhatsApp</button>
+    </form>
+    <a href="https://wa.me/923337824965" class="whatsapp-button click-animate" onclick="animateClick(this)" target="_blank">Quick Message on WhatsApp</a>
+  </section>
+
+
+
+  
+<section class="card fade-in delay-2" style="background: #fffde7; border-left: 6px solid #fbc02d;">
+  <h2 style="color: #f57f17;">Service Availability</h2>
+  <p><strong>We operate daily from <span style="color: #e65100;">10:00 AM to 10:00 PM</span>.</strong></p>
+  <p>Orders placed outside this time may incur additional charges.</p>
+</section>
+
+<section class="card fade-in delay-2">
+    <h2>Contact Us</h2>
+    <p>Phone / WhatsApp: <strong>0333-7824965</strong></p>
+    <p>Email: <strong>info@zeesdelivery.com</strong></p>
+  </section>
+
+  <footer>
+    &copy; 2025 Zee's Delivery Services. All rights reserved.
+  </footer>
+
+  
+<script>
+  function animateClick(el) {
+    el.classList.add('clicked');
+    setTimeout(() => el.classList.remove('clicked'), 150);
+  }
+
+    
+function sendToWhatsApp() {
+  const name = document.getElementById("name").value;
+  const address = document.getElementById("address").value;
+  const phone = document.getElementById("phone").value;
+  const service = document.getElementById("service").value;
+  const payment = document.getElementById("payment").value;
+  const details = document.getElementById("details").value;
+
+  const message = `Order from Zee's Delivery:%0A` +
+                  `Name: ${name}%0A` +
+                  `Address: ${address}%0A` +
+                  `Phone: ${phone}%0A` +
+                  `Service: ${service}%0A` +
+                  `Payment Method: ${payment}%0A` +
+                  `Details: ${details}`;
+
+  const whatsappURL = `https://wa.me/923337824965?text=${message}`;
+  window.open(whatsappURL, "_blank");
+}
+
+  </script>
+
+</body>
+</html>
